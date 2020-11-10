@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+/* Själva spelplanen*/
 #game{
     width: 400px;
     height: 500px;
@@ -15,8 +16,10 @@
     background-color: black;
     position: relative;
     left: 400px;
+     /* Gör så att nästa block kommer 4 sekunder efter föregående */
     animation: block 4s infinite linear;
 }
+/* Gör så att skärmen åker och nya block kommer insvävandes*/
 @keyframes block{
     0%{left:400px}
     100%{left:-50px}
@@ -28,8 +31,10 @@
     position: relative;
     left: 400px;
     top: -500px;
+    /* Gör så att öppningen kommer 4 sekunder efter föregående. Öppningen och blocken måste ske vid samma tid annars komemr det inte fungera*/
     animation: block 4s infinite linear;
 }
+/* Provosorisk spelkaraktär, sedan ska spelkaraktären bytas ut till den riktiga.*/
 #character{
     width: 20px;
     height: 20px;
